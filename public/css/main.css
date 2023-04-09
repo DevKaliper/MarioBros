@@ -470,6 +470,15 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 320px) {
+
+  .container {
+    max-width: 320px;
+  }
+}
 .absolute {
   position: absolute;
 }
@@ -481,6 +490,9 @@ video {
 }
 .-top-3 {
   top: -0.75rem;
+}
+.-top-4 {
+  top: -1rem;
 }
 .left-0 {
   left: 0px;
@@ -523,8 +535,14 @@ video {
 .h-6 {
   height: 1.5rem;
 }
+.h-\[50px\] {
+  height: 50px;
+}
 .w-1\/6 {
   width: 16.666667%;
+}
+.w-2\/3 {
+  width: 66.666667%;
 }
 .w-4 {
   width: 1rem;
@@ -534,6 +552,9 @@ video {
 }
 .w-5\/6 {
   width: 83.333333%;
+}
+.w-\[50px\] {
+  width: 50px;
 }
 .w-full {
   width: 100%;
@@ -562,6 +583,9 @@ video {
 }
 .gap-5 {
   gap: 1.25rem;
+}
+.gap-9 {
+  gap: 2.25rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -630,6 +654,12 @@ video {
 .bg-\[url\(\'\.\.\/img\/pattern-white-dots\.png\'\)\] {
   background-image: url('../img/pattern-white-dots.png');
 }
+.bg-\[url\(\'\.\.\/img\/pattern-yellow-dots\.png\'\)\] {
+  background-image: url('../img/pattern-yellow-dots.png');
+}
+.bg-\[url\(\'\.\.\/img\/wave-pink\.png\'\)\] {
+  background-image: url('../img/wave-pink.png');
+}
 .bg-\[url\(\'\.\.\/img\/wave-white\.png\'\)\] {
   background-image: url('../img/wave-white.png');
 }
@@ -654,9 +684,16 @@ video {
 .p-4 {
   padding: 1rem;
 }
+.p-5 {
+  padding: 1.25rem;
+}
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -678,9 +715,23 @@ video {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
 }
 .pt-52 {
   padding-top: 13rem;
@@ -713,6 +764,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-yellow-900 {
+  --tw-text-opacity: 1;
+  color: rgb(113 63 18 / var(--tw-text-opacity));
 }
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -781,5 +836,14 @@ video {
   .xsm\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
+  }
+
+  .xsm\:w-full {
+    width: 100%;
+  }
+
+  .xsm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
